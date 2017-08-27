@@ -1,5 +1,14 @@
 #include "user.h"
 
+void user::givekey(char key[])
+{
+    strcpy(key,sk);
+}
+
+void user::givename(char n[])
+{
+    strcpy(n,name);
+}
 
 void user::givedata(int &ano,char n[50],int &bal,char key[20])
 {
