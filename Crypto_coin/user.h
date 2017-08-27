@@ -26,6 +26,8 @@ public:
         balance=bal;
         strcpy(sk,key);
     }
+    void givekey(char key[]);
+    void givename(char n[]);
     void givedata(int &ano,char n[50],int &bal,char key[20]);
     void usercpy(user u1);
     void updateuser(int ano, int );
