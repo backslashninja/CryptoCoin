@@ -1,0 +1,20 @@
+Errors...
+
+while not exiting the program...
+
+search user not displaying the result when user is not found;
+
+transactions actually arnt being updated in the file...
+
+
+Do you want to exit crypto coin ?
+
+
+
+
+
+
+
+enter crypto coins in front of balance everywhere..
+
+enter code to prevent repetition of acc. no optional.

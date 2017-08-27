@@ -1,0 +1,30 @@
+# depslib dependency file v1.0
+1503819967 source:c:\users\admin\documents\c++ projects\crypto_coin\main.cpp
+	<iostream>
+	<conio.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<windows.h>
+	<ctime>
+	"user.h"
+	"transaction.h"
+
+1503820836 c:\users\admin\documents\c++ projects\crypto_coin\user.h
+	<iostream>
+	<stdlib.h>
+	<fstream>
+	<stdio.h>
+	<string.h>
+
+1503817491 source:c:\users\admin\documents\c++ projects\crypto_coin\user.cpp
+	"user.h"
+	<fstream>
+
+1503822220 c:\users\admin\documents\c++ projects\crypto_coin\transaction.h
+	<fstream>
+	<stdio.h>
+	<string.h>
+	"user.h "
+	<ctime>
+
