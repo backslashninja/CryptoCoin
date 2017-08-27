@@ -91,14 +91,18 @@ do
 }
 
 void maketransaction(int perno, int peeno, int amt)
-{   user payer,payee;  char key[20];
+{   user payer,payee;  char key[20],skey[20];
     payer.searchuser(perno);  payee.searchuser(peeno);
-
-    transaction t1(payer,payee,amt);
-
     cout<<"\nThe Payer needs to enter his/her secret key for authorizing the transaction.. ";
     getkey(key,20);
-    if(t1.verifytrans(key)) cout<<"\n TRANSACTION AUTHORIZED !!! \n";
+    payer.givekey(skey);
+    if(!strcmp(key,skey))
+    {
+        cout<<"\n TRANSACTION AUTHORIZED !!! \n";
+        payee.updateuser(peeno,amt);
+        payer.updateuser(perno,0-amt);
+
+    }
     else cout<<"You are not Recognised by the system.. ";
 
 }
